@@ -36,17 +36,17 @@ The challenge is not simply to generate an answer. Players must inspect evidence
 
 | Mission selection | Evidence investigation |
 |:---:|:---:|
-| <img src="screenshots/01-mission-selection.png" alt="SpaceRAG VR mission-selection screen" width="100%" /> | <img src="screenshots/02-evidence-investigation.png" alt="Player reviewing mission evidence" width="100%" /> |
+| <img src="Screenshots/01-mission-selection.png" alt="SpaceRAG VR mission-selection screen" width="100%" /> | <img src="Screenshots/02-evidence-investigation.png" alt="Player reviewing mission evidence" width="100%" /> |
 | *Choose a mission and begin AI training.* | *Inspect evidence before trusting the generated answer.* |
 
 | Evidence reranking | AI answer validation |
 |:---:|:---:|
-| <img src="screenshots/03-evidence-reranking.png" alt="Player ranking evidence cards" width="100%" /> | <img src="screenshots/04-answer-validation.png" alt="Player validating an AI-generated answer" width="100%" /> |
+| <img src="Screenshots/03-evidence-reranking.png" alt="Player ranking evidence cards" width="100%" /> | <img src="screenshots/04-answer-validation.png" alt="Player validating an AI-generated answer" width="100%" /> |
 | *Prioritize the strongest sources for generation.* | *Classify the response as grounded, partial, or risky.* |
 
 | Mission outcome | Performance debrief |
 |:---:|:---:|
-| <img src="screenshots/05-mission-outcome.png" alt="Animated mission outcome hologram" width="100%" /> | <img src="screenshots/06-performance-debrief.png" alt="Final SpaceRAG VR performance summary" width="100%" /> |
+| <img src="Screenshots/05-mission-outcome.png" alt="Animated mission outcome hologram" width="100%" /> | <img src="Screenshots/06-performance-debrief.png" alt="Final SpaceRAG VR performance summary" width="100%" /> |
 | *See the operational consequence of the decision.* | *Review trust score and session performance.* |
 
 ## Core Gameplay Loop
