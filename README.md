@@ -41,7 +41,7 @@ The challenge is not simply to generate an answer. Players must inspect evidence
 
 | Evidence reranking | AI answer validation |
 |:---:|:---:|
-| <img src="Screenshots/03-evidence-reranking.png" alt="Player ranking evidence cards" width="100%" /> | <img src="screenshots/04-answer-validation.png" alt="Player validating an AI-generated answer" width="100%" /> |
+| <img src="Screenshots/03-evidence-reranking.png" alt="Player ranking evidence cards" width="100%" /> | <img src="Screenshots/04-answer-validation.png" alt="Player validating an AI-generated answer" width="100%" /> |
 | *Prioritize the strongest sources for generation.* | *Classify the response as grounded, partial, or risky.* |
 
 | Mission outcome | Performance debrief |
