@@ -27,6 +27,11 @@ public class ValidationManager : MonoBehaviour
     [SerializeField] private TMP_Text validationResultMessageText;
     [SerializeField] private TMP_Text validationMetricsText;
 
+    [Header("Result Actions")]
+    [SerializeField] private GameObject provideAnswerButton;
+    [SerializeField] private GameObject reassessEvidenceButton;
+    [SerializeField] private GameObject revalidateAssessmentButton;
+
     private void OnEnable()
     {
         if (validationChoicePanel != null &&
@@ -77,12 +82,17 @@ public class ValidationManager : MonoBehaviour
         else
         {
             validationResultMessageText.text =
-                "ASSESSMENT NEEDS REVIEW\nThis answer is actually " +
-                GetQualityName(actualQuality) + ".";
+                "ASSESSMENT NEEDS REVIEW\n" +
+                "Compare the answer with its supporting evidence " +
+                "and try again.";
 
             validationResultMessageText.color =
                 new Color32(255, 179, 71, 255);
         }
+
+        ConfigureResultActions(
+            correctChoice,
+            actualQuality);
 
         int retrievalScore =
             CalculateRetrievalScore(
@@ -150,6 +160,44 @@ public class ValidationManager : MonoBehaviour
 
         validationChoicePanel.SetActive(false);
         validationResultsPanel.SetActive(true);
+    }
+
+    private void ConfigureResultActions(
+        bool correctChoice,
+        AnswerQuality actualQuality)
+    {
+        if (provideAnswerButton == null ||
+            reassessEvidenceButton == null ||
+            revalidateAssessmentButton == null)
+        {
+            Debug.LogError(
+                "One or more validation result buttons are not assigned.");
+
+            return;
+        }
+
+        bool canProvideAnswer =
+            correctChoice &&
+            actualQuality == AnswerQuality.Grounded;
+
+        bool shouldReassessEvidence =
+            correctChoice &&
+            actualQuality != AnswerQuality.Grounded;
+
+        bool shouldRevalidate =
+            !correctChoice;
+
+        provideAnswerButton.SetActive(canProvideAnswer);
+        reassessEvidenceButton.SetActive(
+            shouldReassessEvidence);
+        revalidateAssessmentButton.SetActive(
+            shouldRevalidate);
+    }
+
+    public void RevalidateAssessment()
+    {
+        validationResultsPanel.SetActive(false);
+        validationChoicePanel.SetActive(true);
     }
 
     private AnswerQuality DetermineAnswerQuality(

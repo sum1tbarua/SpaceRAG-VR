@@ -56,6 +56,18 @@ public class MissionOutcomeManager : MonoBehaviour
         ShowOutcome(true);
     }
 
+    public void ReassessEvidence()
+    {
+        // Hide the generated-answer and validation interfaces.
+        llmPanel.SetActive(false);
+        validationPanel.SetActive(false);
+        validationReferencePanel.SetActive(false);
+
+        // Return to the existing evidence-ranking interface.
+        rankingWorkspacePanel.SetActive(true);
+        rerankingCanvas.SetActive(true);
+    }
+
     public void RetryMission()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
