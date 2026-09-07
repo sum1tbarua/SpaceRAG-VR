@@ -122,7 +122,7 @@ This version uses predefined mission questions, evidence cards, reference answer
 
 ### Installation
 
-1. Download `SpaceRAGVR.apk` from the [latest GitHub Release](https://github.com/sum1tbarua/SpaceRAG-VR/releases/latest).
+1. Download `SpaceRAGVR-v1.0.3.apk` from the [latest GitHub Release](https://github.com/sum1tbarua/SpaceRAG-VR/releases/latest).
 2. Connect the Quest headset to the computer.
 3. Approve USB debugging inside the headset if prompted.
 4. Open Meta Quest Developer Hub and select the connected device.
