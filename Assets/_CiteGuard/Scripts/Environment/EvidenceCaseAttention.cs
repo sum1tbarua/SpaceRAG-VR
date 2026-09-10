@@ -29,17 +29,11 @@ public class EvidenceCaseAttention : MonoBehaviour
         float currentTime = Time.unscaledTime;
 
         float horizontalOffset =
-            Mathf.Sin(
-                currentTime * vibrationSpeed
-            ) * horizontalAmount;
+            Mathf.Sin(currentTime * vibrationSpeed) * horizontalAmount;
 
         float verticalOffset =
             Mathf.Abs(
-                Mathf.Sin(
-                    currentTime *
-                    vibrationSpeed *
-                    0.5f
-                )
+                Mathf.Sin(currentTime *vibrationSpeed *0.5f)
             ) * verticalAmount;
 
         float rotationOffset =
@@ -47,9 +41,7 @@ public class EvidenceCaseAttention : MonoBehaviour
                 currentTime * rotationSpeed
             ) * rotationAmount;
 
-        transform.localPosition =
-            restingLocalPosition +
-            new Vector3(
+        transform.localPosition = restingLocalPosition + new Vector3(
                 horizontalOffset,
                 verticalOffset,
                 0f
