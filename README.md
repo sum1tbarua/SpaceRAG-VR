@@ -25,6 +25,16 @@ The challenge is not simply to generate an answer. Players must inspect evidence
 
 > In high-stakes environments, a confident answer is not enough—the answer must be supported by trustworthy evidence.
 
+## Gameplay Preview
+
+<p align="center">
+  <img
+    src="Screenshots/gameplay.gif"
+    alt="SpaceRAG VR gameplay demonstration"
+    width="800"
+  />
+</p>
+
 ## Gameplay Gallery
 
 | Mission selection | Evidence investigation |
