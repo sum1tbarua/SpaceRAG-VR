@@ -32,8 +32,7 @@ public class RankingCompletionManager : MonoBehaviour
 
         if (sendToLlmButton != null)
         {
-            sendToLlmButton.interactable =
-                allSlotsFilled;
+            sendToLlmButton.interactable = allSlotsFilled;
         }
     }
 }
