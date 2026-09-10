@@ -1,8 +1,5 @@
 <div align="center">
 
-<!-- ICON PLACEHOLDER
-     Add your game icon at: docs/images/spacerag-vr-icon.png
-     Recommended format: square PNG with a transparent background. -->
 <img src="Screenshots/Logo.png" alt="SpaceRAG VR icon" width="220" />
 
 # SpaceRAG VR
@@ -29,10 +26,6 @@ The challenge is not simply to generate an answer. Players must inspect evidence
 > In high-stakes environments, a confident answer is not enough—the answer must be supported by trustworthy evidence.
 
 ## Gameplay Gallery
-
-<!-- SCREENSHOT PLACEHOLDERS
-     Create the docs/images folder and replace these files with your screenshots.
-     Recommended size: 1600 × 900 PNG or JPG using the same aspect ratio. -->
 
 | Mission selection | Evidence investigation |
 |:---:|:---:|
@@ -195,19 +188,10 @@ The space-mission setting makes failures visible and consequential. A poorly sup
 ## Author
 
 **Sumit Barua**  
-M.S. Computer Science, Western Michigan University  
-[GitHub](https://github.com/sum1tbarua)
+Computer Science, Western Michigan University  
 
 ## License and Asset Notice
 
 A project license will be added after the redistribution terms of all third-party assets have been reviewed. Until then, the absence of a license means the source code and project assets are not automatically granted for reuse or redistribution.
 
 Third-party artwork, fonts, audio, Unity packages, and other assets remain subject to their respective licenses. Compiled builds are provided for educational demonstration and testing.
-
----
-
-<div align="center">
-
-**Retrieve carefully. Validate deliberately. Protect the mission.**
-
-</div>
